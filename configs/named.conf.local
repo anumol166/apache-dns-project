@@ -1,0 +1,4 @@
+zone "myproject.local"{
+        type master;
+        file "/etc/bind/db.myproject";
+};

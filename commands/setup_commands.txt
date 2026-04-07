@@ -1,0 +1,34 @@
+#update system
+sudo apt update
+
+#Install Apache
+sudo apt install apache2 -y
+
+#Start and Enable Apache
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl status apache2
+
+#Test Apache
+tested apache using http://localhost
+
+#Clean Web Directory
+sudo rm -rf /var/www/html/*
+
+#Create Website
+sudo nano /var/www/html/index.html
+
+#Installed DNS Server
+sudo apt install bind9 -y
+
+#Configure DNS Zone
+nano /etc/bind/named.conf.local
+
+#Create Zone File
+sudo nano /etc/bind/db.myproject
+
+#Restart DNS
+suso systemctl restart named
+
+#Test DNS
+nslookup myproject.local

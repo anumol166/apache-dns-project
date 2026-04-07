@@ -1,0 +1,12 @@
+$TTL    604800
+@       IN      SOA     myproject.local. root.myproject.local. (
+                        2         ; Serial
+                        604800    ; Refresh
+                        86400     ; Retry
+                        2419200   ; Expire
+                        604800 )  ; Negative Cache TTL
+
+@       IN      NS      myproject.local.
+
+@       IN      A       192.168.18.154
+www     IN      A       192.168.18.154
